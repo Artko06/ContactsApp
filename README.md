@@ -17,7 +17,7 @@ Android-приложение для просмотра списка контак
 | <img src="screenshots/contact_call_light.png" width="300"/> | <img src="screenshots/contact_call_dark.png" width="300"/> |
 
 ## Стек технологий
-В проекте используются современные инструменты Android-разработки:
+- **Android Studio** 
 - **Kotlin** 
 - **Jetpack Compose** 
 - **Hilt** 
