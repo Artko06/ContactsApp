@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ContactsApp</string>
+
+    <string name="permission_read_contacts_required">Разрешение на чтение контактов необходимо</string>
+    <string name="no_call_permission">Нет разрешения на звонок</string>
+    <string name="contacts_not_found">Контакты не найдены</string>
 </resources>
