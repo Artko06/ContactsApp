@@ -5,9 +5,11 @@ import android.provider.ContactsContract
 import com.example.contactsapp.data.entity.ContactDataEntity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import javax.inject.Inject
+import dagger.hilt.android.qualifiers.ApplicationContext
 
-class ContactsLocalDataSourceImpl(
-    private val context: Context
+class ContactsLocalDataSourceImpl @Inject constructor(
+    @param:ApplicationContext private val context: Context
 ): ContactsLocalDataSource {
 
     override suspend fun getContacts(): List<ContactDataEntity> = withContext(Dispatchers.IO) {

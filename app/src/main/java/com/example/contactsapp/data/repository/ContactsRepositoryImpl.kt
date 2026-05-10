@@ -5,8 +5,9 @@ import com.example.contactsapp.domain.entity.ContactItem
 import com.example.contactsapp.domain.repository.ContactsRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import javax.inject.Inject
 
-class ContactsRepositoryImpl(
+class ContactsRepositoryImpl @Inject constructor(
     private val contactsLocalDataSource: ContactsLocalDataSource
 ) : ContactsRepository {
 
